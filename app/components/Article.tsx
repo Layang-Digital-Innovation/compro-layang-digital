@@ -1,5 +1,8 @@
 import React from 'react'
 import Button from './Button'
+import article1 from "app/assets/Online world-cuate.svg"
+import article2 from "app/assets/Artificial intelligence-amico.svg"
+import article3 from "app/assets/teamwork high five-bro.svg"
 
 export default function Article() {
   return (
@@ -12,8 +15,8 @@ export default function Article() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Article 1 */}
-            <div className="border border-slate-300 bg-white rounded-md shadow-sm hover:shadow-md transition">
-              <img src="https://placehold.co/600x400" alt="" />
+            <div className="border border-slate-300 bg-white rounded-md shadow-sm hover:shadow-md transition p-2">
+              <img src={article1} alt="" />
               <div className="p-4">
                 <p className="text-label1 text-gray-500 mb-1">May 12, 2025</p>
                 <h2 className="text-sub-title1 font-semibold mb-2">
@@ -33,8 +36,8 @@ export default function Article() {
             </div>
 
             {/* Article 2 */}
-            <div className="border border-slate-300 bg-white rounded-md shadow-sm hover:shadow-md transition">
-              <img src="https://placehold.co/600x400" alt="" />
+            <div className="border border-slate-300 bg-white rounded-md shadow-sm hover:shadow-md transition p-2">
+              <img src={article2} alt="" />
               <div className="p-4">
                 <p className="text-label1 text-gray-500 mb-1">April 28, 2025</p>
 
@@ -55,8 +58,8 @@ export default function Article() {
             </div>
 
             {/* Article 3 */}
-            <div className="border border-slate-300 bg-white rounded-md shadow-sm hover:shadow-md transition">
-              <img src="https://placehold.co/600x400" alt="" />
+            <div className="border border-slate-300 bg-white rounded-md shadow-sm hover:shadow-md transition p-2">
+              <img src={article3} alt="" />
               <div className="p-4">
                 <p className="text-label1 text-gray-500 mb-1">April 10, 2025</p>
                 <h2 className="text-sub-title1 font-semibold mb-2">

@@ -2,30 +2,36 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
 
+import service1 from "app/assets/Open source-bro.svg"
+import service2 from "app/assets/App development-bro.svg"
+import service3 from "app/assets/Interaction Design-pana.svg"
+import service4 from "app/assets/tech company-amico.svg"
+
+
 const features = [
   {
     title: "Web Development",
     description:
       "Build fast, scalable, and secure web applications tailored to your business needs.",
-    image: "/web-dev.png",
+    image: service1,
   },
   {
     title: "Mobile Apps",
     description:
       "Design and develop intuitive mobile applications for iOS and Android.",
-    image: "/mobile-apps.png",
+    image: service2,
   },
   {
     title: "SaaS Solutions",
     description:
       "Launch your own software-as-a-service platform with multi-tenant architecture.",
-    image: "/saas.png",
+    image: service3
   },
   {
     title: "On-Demand Platforms",
     description:
       "Create platforms that connect users and services in real-time.",
-    image: "/ondemand.png",
+    image: service4
   },
 ];
 
@@ -108,7 +114,7 @@ export default function Services() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.4 }}
-              className="bg-white p-6 rounded-xl shadow-md border"
+              className="bg-white p-6 rounded-xl shadow-md border border-t-5 border-t-[#068D9D]"
             >
               <h3 className="text-2xl font-bold mb-4">
                 {features[activeIndex].title}
@@ -119,7 +125,7 @@ export default function Services() {
               <img
                 src={features[activeIndex].image}
                 alt={features[activeIndex].title}
-                className="w-full rounded-md"
+                className="w-full h-[300px] object-contain rounded-md"
               />
             </motion.div>
           </AnimatePresence>

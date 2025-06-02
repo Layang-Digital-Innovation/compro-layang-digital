@@ -24,7 +24,7 @@ export default function Footer() {
                 placeholder="Enter Your Email"
                 className="border border-white max-w-full md:w-[60%] p-2 rounded-md"
               />
-              <Button className="bg-[#986FB3] hover:bg-[#b283d1] md:max-w-fit w-[40%]">
+              <Button className="bg-[#986FB3] my-2 md:my-0 hover:bg-[#b283d1] md:max-w-fit w-[40%]">
                 Subscribe
               </Button>
             </div>
