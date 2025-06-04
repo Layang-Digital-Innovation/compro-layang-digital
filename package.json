@@ -2,10 +2,12 @@
   "name": "fe-compro-layang-digital-innovation",
   "private": true,
   "type": "module",
+  "homepage": "./",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
+    "predeploy": "npm run build",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
