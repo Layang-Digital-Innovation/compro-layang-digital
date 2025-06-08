@@ -78,9 +78,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row gap-2 justify-between py-2">
             <p className="text-label1"> © Layang Digital Innovation , 2025. All rights reserved</p>
             <div className="flex gap-4">
-              <img src={instagram} alt="Instagram" />
-              <img src={faceBook} alt="Facebook" />
-              <img src={youtube} alt="Youtube" />
+              <a href="https://www.instagram.com/layangdigital/" target="_blank"><img src={instagram} alt="Instagram" /></a>
+              <a href="https://www.facebook.com/Layangdigital/" target="_blank"><img src={faceBook} alt="Facebook" /></a>
+              <a href="https://www.youtube.com/@layangdigitalinnovation3011" target="_blank"><img src={youtube} alt="Youtube" /></a>
             </div>
           </div>
         </div>

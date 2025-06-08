@@ -45,7 +45,7 @@ function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden md:flex">
-          <Button>Contact Us</Button>
+          <a href="https://api.whatsapp.com/send?phone=6282116925851"><Button>Contact Us</Button></a>
         </div>
 
         {/* Hamburger (Mobile) */}
