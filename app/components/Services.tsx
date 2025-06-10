@@ -52,7 +52,7 @@ export default function Services() {
   }, [activeIndex]);
 
   return (
-    <section className="container mx-auto px-6 md:px-12 lg:px-20 py-16">
+    <section id="services" className="container mx-auto px-6 md:px-12 lg:px-20 py-16">
       <div className="flex flex-wrap md:flex-auto justify-between">
         <div className="max-w-xl">
           <h1 className="text-3xl font-aileron font-semibold">What We Do ?</h1>

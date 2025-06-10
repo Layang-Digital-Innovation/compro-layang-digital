@@ -13,7 +13,7 @@ export default function CallToAction() {
                   Reach out and discover how we can turn your business goals into
                   digital success.
                 </p>
-                <a href="https://api.whatsapp.com/send?phone=6282116925851"><Button>Let's Talk</Button></a>
+                <a href="https://api.whatsapp.com/send?phone=6285182322580"><Button>Let's Talk</Button></a>
               </div>
                 <img src={CTAImage} className='w-[400px] mt-8 md:mt-0' alt="" />
             </div>

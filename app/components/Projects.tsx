@@ -43,7 +43,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="bg-[#FDFDFD]">
+    <section id="project" className="bg-[#FDFDFD]">
       <div className="container px-5 md:px-10 lg:px-16 mx-auto py-14">
         <h1 className="text-center text-header3 font-aileron font-semibold">
           Project That Matter
@@ -79,6 +79,6 @@ export default function Projects() {
           <Button>See All Portfolios</Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

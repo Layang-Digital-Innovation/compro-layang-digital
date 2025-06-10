@@ -35,7 +35,7 @@
 
 html,
 body {
-  @apply bg-[#F6F9FC] dark:bg-gray-950;
+  @apply bg-[#F6F9FC] dark:bg-gray-950 scroll-smooth;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
