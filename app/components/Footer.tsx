@@ -4,12 +4,12 @@ import logoLayang2 from "app/assets/logo-layang-2.png"
 import faceBook from "app/assets/Facebook.png"
 import instagram from "app/assets/instagram.png"
 import youtube from "app/assets/Youtube.png"
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Facebook, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
           <section className="bg-[#53599A] text-white">
-        <div className="container px-5 md:px-10 lg:px-16 mx-auto py-14">
+        <div className="container px-5 md:px-10 lg:px-16 mx-auto pt-14 pb-24">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="max-w-md">
               <h1 className="text-header2">Join Our News Letter</h1>
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Phone/>
-              <p>0821-1692-5851</p>
+              <p>0851-8232-2580</p>
             </div>
           </div>
           <div className="grid grid-cols-3 py-10 gap-9 w-full max-w-md">
@@ -59,9 +59,9 @@ export default function Footer() {
               Social Media
             </h3>
             <ul className="font-light">
-              <li>Facebook</li>
+              <a href=""></a><li>Facebook</li>
               <li>Youtube</li>
-              <li>Instagram</li>
+              <a href="https://www.facebook.com/Layangdigital/"></a><li >Instagram</li>
             </ul>
           </div>
           <div className="w-fit">
@@ -78,9 +78,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row gap-2 justify-between py-2">
             <p className="text-label1"> © Layang Digital Innovation , 2025. All rights reserved</p>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/layangdigital/" target="_blank"><img src={instagram} alt="Instagram" /></a>
-              <a href="https://www.facebook.com/Layangdigital/" target="_blank"><img src={faceBook} alt="Facebook" /></a>
-              <a href="https://www.youtube.com/@layangdigitalinnovation3011" target="_blank"><img src={youtube} alt="Youtube" /></a>
+              <a href="https://www.instagram.com/layangdigital/" target="_blank"><Instagram className='text-[#a592b1]'/></a>
+              <a href="https://www.facebook.com/Layangdigital/" target="_blank"><Facebook className='text-[#a592b1]'/></a>
+              <a href="https://www.youtube.com/@layangdigitalinnovation3011" target="_blank"><Youtube className='text-[#a592b1]'/></a>
             </div>
           </div>
         </div>

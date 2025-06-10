@@ -12,6 +12,9 @@ import Article from "~/components/Article";
 
 import Services from "~/components/Services";
 import Footer from "~/components/Footer";
+import PerspectiveText from "~/components/PerspectiveText";
+import { MessageCircleIcon, MessageCircleReply, MessageCircleX } from "lucide-react";
+import CTAButton from "~/components/CTAButton";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -27,6 +30,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <CTAButton/>
       <Hero />
       <Client />
       <Services/>

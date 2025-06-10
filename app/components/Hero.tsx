@@ -16,7 +16,10 @@ function Hero() {
             success.
           </h2>
           <div className="mx-auto flex justify-center items-center md:block">
-            <Button>Discover Our Works</Button>
+            <a href="#project">
+              <Button>Discover Our Works</Button>
+            </a>
+            
           </div>
         </div>
         <div className="w-full flex justify-center items-center my-10 md:my-0">
