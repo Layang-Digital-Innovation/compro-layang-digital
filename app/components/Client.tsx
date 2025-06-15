@@ -5,15 +5,20 @@ import logo2 from "~/assets/logo-halo-optom.png"
 import logo1 from "~/assets/logo-timelesstype.png"
 import logo3 from "~/assets/logo-universitas-bth.png"
 
+import { getInstance } from "~/middleware/i18next";
+import { useTranslation } from "react-i18next"
+
 export default function Client() {
+
+  const  {t} = useTranslation();
 
       const listImage = [logo1, logo2, logo3, logo4, logo5, logo6]
 
   return (
           <section className="bg-[#FDFDFD]">
         <div className="container py-10 px-5 md:px-10 lg:px-16 mx-auto">
-          <h1 className="font-aileron text-header3 text-center font-bold">Trusted by Client Across Industries</h1>
-          <p className="text-center text-sub-title2">Here are some of the companies that have trusted us with their digital journey.</p>
+          <h1 className="font-aileron text-header3 text-center font-bold">{t("client.header")}</h1>
+          <p className="text-center text-sub-title2">{t("client.subtitle")}</p>
           <div className="flex flex-wrap pt-10 justify-center gap-10">
             {
               listImage.map((item, i) => (

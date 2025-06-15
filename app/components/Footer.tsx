@@ -5,17 +5,22 @@ import faceBook from "app/assets/Facebook.png"
 import instagram from "app/assets/instagram.png"
 import youtube from "app/assets/Youtube.png"
 import { Mail, Phone, Facebook, Instagram, Youtube } from "lucide-react";
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
+
+  const {t} = useTranslation();
+
   return (
           <section className="bg-[#53599A] text-white">
         <div className="container px-5 md:px-10 lg:px-16 mx-auto pt-14 pb-24">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="max-w-md">
-              <h1 className="text-header2">Join Our News Letter</h1>
+              <h1 className="text-header2">{t("footer.header")}</h1>
               <p>
-                Get the latest insights, tips, and updates on digital innovation
-                — straight to your inbox.
+               {
+                t("footer.subtitle")
+               }
               </p>
             </div>
             <div className="flex flex-col md:flex-row md:self-center justify-end gap-1 w-full md:w-1/2 py-8 md:py-0">
@@ -25,7 +30,7 @@ export default function Footer() {
                 className="border border-white max-w-full md:w-[60%] p-2 rounded-md"
               />
               <Button className="bg-[#986FB3] my-2 md:my-0 hover:bg-[#b283d1] md:max-w-fit w-[40%]">
-                Subscribe
+                {t("footer.button")}
               </Button>
             </div>
           </div>
@@ -59,9 +64,9 @@ export default function Footer() {
               Social Media
             </h3>
             <ul className="font-light">
-              <a href=""></a><li>Facebook</li>
-              <li>Youtube</li>
-              <a href="https://www.facebook.com/Layangdigital/"></a><li >Instagram</li>
+              <a href="https://www.facebook.com/Layangdigital/" target="_blank"><li>Facebook</li></a>
+             <a href="https://www.youtube.com/@layangdigitalinnovation3011" target="_blank"><li>Youtube</li></a>
+              <a href="https://www.instagram.com/layangdigital/" target="_blank"><li>Instagram</li></a>
             </ul>
           </div>
           <div className="w-fit">
