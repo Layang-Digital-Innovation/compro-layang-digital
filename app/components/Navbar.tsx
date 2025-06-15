@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import logoLayang from "app/assets/logo-layang.png";
 import Button from "./Button";
 import { AnimatePresence, motion } from "framer-motion";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,12 +45,19 @@ function Navbar() {
           </ul>
         </nav>
 
+      
+
         {/* Contact Button (Desktop) */}
-        <div className="hidden md:flex">
+        <div className="flex items-center gap-4">
+          
+       <div className="hidden md:flex">
           <a href="https://api.whatsapp.com/send?phone=6285182322580">
             <Button>Contact Us</Button>
           </a>
         </div>
+          <LanguageSwitcher/>
+        </div>
+ 
 
         {/* Hamburger Button (Mobile) */}
         <div className="md:hidden flex items-center">
