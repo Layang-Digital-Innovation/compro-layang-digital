@@ -7,7 +7,7 @@ import { initReactI18next } from "react-i18next";
 export const localeCookie = createCookie("lng", {
   path: "/",
   sameSite: "lax",
-  secure: process.env.NODE_ENV === "production",
+  // secure: process.env.NODE_ENV === "production",
   httpOnly: true,
 });
 
