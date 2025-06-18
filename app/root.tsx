@@ -36,13 +36,13 @@ export const links: Route.LinksFunction = () => [
   }
 ];
 
-// export async function loader({ context }: Route.LoaderArgs) {
-//   let locale = getLocale(context);
-//   return data(
-//     { locale },
-//     { headers: { "Set-Cookie": await localeCookie.serialize(locale) } }
-//   );
-// }
+export async function loader({ context }: Route.LoaderArgs) {
+  let locale = getLocale(context);
+  return data(
+    { locale },
+    { headers: { "Set-Cookie": await localeCookie.serialize(locale) } }
+  );
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   let { i18n } = useTranslation(); 
@@ -65,6 +65,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App({ loaderData }: Route.ComponentProps) {
-  // useChangeLanguage(loaderData.locale);
+  useChangeLanguage(loaderData.locale);
   return <Outlet />;
 }
