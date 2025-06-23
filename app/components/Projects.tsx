@@ -6,48 +6,55 @@ import portfolio3 from "app/assets/Portfolio 3 - Functional Prehab.png";
 import portfolio4 from "app/assets/Portfolio 4 - Breaker Creative.png";
 import portfolio5 from "app/assets/Portfolio 5 - Aplikasi Lifeline.png";
 import portfolio6 from "app/assets/Portfolio 6 - Isuzu Dealer Tasikmalaya.png";
-import { useTranslation } from "react-i18next";
 
 export default function Projects() {
-
-   const { t } = useTranslation();
-
-  const projects = t("projects", { returnObjects: true }) as {
-    header: string;
-    subtitle: string;
-    project: {
-      title: string;
-      description: string;
-    }[];
-    button: string;
-  };
-
-  const images = [
-    portfolio1,
-    portfolio2,
-    portfolio3,
-    portfolio4,
-    portfolio5,
-    portfolio6,
+  const project = [
+    {
+      title: "Timeless Type",
+      img: portfolio1,
+      description: "Digital branding and modern typography portfolio website.",
+    },
+    {
+      title: "LMS Universitas BTH",
+      img: portfolio2,
+      description: "Learning management system for university scale.",
+    },
+    {
+      title: "Functional Prehab",
+      img: portfolio3,
+      description:
+        "A digital platform for physical therapy and prehabilitation.",
+    },
+    {
+      title: "Breaker Creative",
+      img: portfolio4,
+      description: "Creative agency site with a focus on motion and visuals.",
+    },
+    {
+      title: "Aplikasi Lifeline",
+      img: portfolio5,
+      description: "Emergency contact and life-saving information app.",
+    },
+    {
+      title: "Isuzu Dealer Tasikmalaya",
+      img: portfolio6,
+      description: "Dealer showcase and booking system for Isuzu products.",
+    },
   ];
-
-  const projectList = projects.project.map((item, index) => ({
-    ...item,
-    img: images[index] || "", // fallback jika jumlah data tidak cocok
-  }));
 
   return (
     <section id="project" className="bg-[#FDFDFD]">
       <div className="container px-5 md:px-10 lg:px-16 mx-auto py-14">
         <h1 className="text-center text-header3 font-aileron font-semibold">
-          {t("projects.header")}
+          Project That Matter
         </h1>
         <p className="text-center">
-         {t("projects.subtitle")}
+          Explore how we've helped our clients solve real-world problems through
+          design and technology
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-8">
-          {projectList.map((item, index) => (
+          {project.map((item, index) => (
             <div
               key={index}
               className="bg-white group relative p-2 drop-shadow-md rounded-lg"
@@ -69,7 +76,7 @@ export default function Projects() {
         </div>
 
         <div className="flex justify-center">
-          <Button>{t("projects.button")}</Button>
+          <Button>See All Portfolios</Button>
         </div>
       </div>
     </section>
