@@ -18,12 +18,19 @@
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.15.0",
+    "i18next": "^25.2.1",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next-fetch-backend": "^6.0.0",
     "isbot": "^5.1.27",
     "lucide-react": "^0.511.0",
+    "pretty-cache-header": "^1.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-i18next": "^15.5.3",
     "react-router": "^7.5.3",
-    "tailwind-merge": "^3.3.0"
+    "remix-i18next": "^7.2.1",
+    "tailwind-merge": "^3.3.0",
+    "zod": "^3.25.64"
   },
   "devDependencies": {
     "@netlify/vite-plugin-react-router": "^1.0.1",

@@ -7,6 +7,7 @@ import youtube from "app/assets/Youtube.png";
 import { Mail, Phone, Facebook, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
+
   return (
     <section className="bg-[#53599A] text-white">
       <div className="container px-5 md:px-10 lg:px-16 mx-auto pt-14 pb-24">

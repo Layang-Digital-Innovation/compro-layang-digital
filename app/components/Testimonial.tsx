@@ -1,7 +1,11 @@
 import React from 'react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel'
+import { useTranslation } from 'react-i18next'
 
 export default function Testimonial() {
+
+  const {t} = useTranslation();
+
   return (
           <div>
         <div className="container px-5 md:px-10 lg:px-16 mx-auto py-14">      
@@ -47,8 +51,8 @@ export default function Testimonial() {
     >
         <div className='flex justify-between items-center'>
              <div className="">
-            <h1 className="text-header3 font-aileron font-bold">Client Experiences</h1>
-            <p>Real feedback from businesses we’ve helped grow through digital innovation</p>
+            <h1 className="text-header3 font-aileron font-bold">{t("testimonial.header")}</h1>
+            <p>{t("testimonial.subtitle")}</p>
           </div>
         <div className='flex gap-2 self-end'>
       <CarouselPrevious />

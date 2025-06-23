@@ -1,7 +1,11 @@
 import React from 'react'
 import PerspectiveText from './PerspectiveText'
+import { useTranslation } from 'react-i18next';
 
 export default function CTAButton() {
+
+  const { t } = useTranslation();
+
   return (
        <a
      href="https://api.whatsapp.com/send?phone=6285182322580"
@@ -25,7 +29,7 @@ export default function CTAButton() {
        <path d="M12 12h.01" />
        <path d="M16 12h.01" />
      </svg>
-      <PerspectiveText label="Consult Now!" />
+      <PerspectiveText label={t("cta")} />
    </a>
   )
 }
